@@ -48,6 +48,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     border: none;
 }
 
+
+
 .form-group input::placeholder {
     color: #494949; /* Replace with your desired color */
     opacity: 1; /* Ensures the color displays fully (optional) */
@@ -56,4 +58,52 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .form-group.submit{
     background: var(--text-color);
     color: var(--background-color);
+    transition: all 0.2s ease;
+}
+
+.form-group.submit > button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.form-group.submit:hover{
+    transition: all 0.2s ease;
+   
+
+}
+
+
+.error-field{
+    border: 3px solid #ff0000f5;
+    color: #ff0000f5;
+    animation: shake 0.5s;
+    box-shadow: 5px 5px 10px #ff00005b, -5px -5px 10px #ff00005b;
+    
+}
+
+.success-field{
+    border: 3px solid green;
+    color: green;
+    box-shadow: 5px 5px 10px #00800050, -5px -5px 10px #00800052;
+
+}
+
+@keyframes shake{
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-2px); }
+    20% { transform: translateX(2px); }
+    30% { transform: translateX(-2px); }
+    40% { transform: translateX(2px); }
+    50% { transform: translateX(0); }
+    60% { transform: translateX(-2px); }
+    70% { transform: translateX(2px); }
+    80% { transform: translateX(0); }
+    90% { transform: translateX(-2px); }
+    100% { transform: translateX(0); }
+}
+
+.error-message{
+    color: #ff0000f5;
+    margin-top: 8px;
+    font-weight: bold;
 }
