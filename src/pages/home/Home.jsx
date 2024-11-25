@@ -9,6 +9,8 @@ const Home = () => {
         <div className="nav-links block mt-20 mx-auto">
             <Link className='font-semibold text-xl ' to='/login'>Login</Link>
             <Link className='font-semibold text-xl ' to='/signup'>Signup</Link>
+            <Link className='font-semibold text-xl ' to='/loading'>view loading page</Link>
+
         </div>
     </div>
   )
