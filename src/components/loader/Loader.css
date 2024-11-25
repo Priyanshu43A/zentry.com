@@ -1,0 +1,21 @@
+
+
+#loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full screen height */
+    width: 100vw;  /* Full screen width */
+    background-color: var(--background-color); /* Adjust if you need a background color */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  
+#loader iframe {
+    border: none;
+    width: 100vw;
+    height: 40%;    
+  }
+  
