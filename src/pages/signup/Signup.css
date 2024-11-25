@@ -1,0 +1,59 @@
+.signup-heading{
+    font-family: var(--font-lora);
+}
+
+
+.signup-form-cont{
+ background: var(--glass-background-color);
+ color: var(--glass-text-color);
+ min-width: 25%;
+ padding: 1rem;
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+.signup-form{
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+.form-group input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    outline: none;  
+    box-shadow: none;
+}
+
+.form-group input:focus{
+    border: none;
+}
+
+.form-group input::placeholder {
+    color: #494949; /* Replace with your desired color */
+    opacity: 1; /* Ensures the color displays fully (optional) */
+}
+
+.form-group.submit{
+    background: var(--text-color);
+    color: var(--background-color);
+}
