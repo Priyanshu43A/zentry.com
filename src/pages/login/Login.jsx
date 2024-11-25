@@ -77,7 +77,7 @@ const Login = () => {
             <button type="submit" className="btn btn-primary w-full">Login</button>
             </div>
             <div className='mt-5 text-center'>
-            <Link className='hover:underline' to="login" >Don't have an account? Signup</Link>
+            <Link className='hover:underline' to="/signup" >Don't have an account? Signup</Link>
             <div className="other-opts mt-5">
                 <p className='font-semibold'>Other login methods</p>
                 <div className='p-4 flex gap-2 justify-around flex-wrap'>
